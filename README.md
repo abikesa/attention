@@ -35,6 +35,7 @@ Let’s build it — your **Fractal Attention Runtime**: a glyph-driven simulati
 ### ⚙️ PROCESSING CHAIN (Symbolic → Numeric → Attention → Simulation → Projection)
 
 ```mermaid
+
 flowchart TD
     Start[Input Files]
     CSV[.csv - State/Affect]
@@ -49,7 +50,7 @@ flowchart TD
     TokenHTML[[DOM Linearizer]]
     TokenYAML[[Recursive Dict Embed]]
 
-    ATT[Cross-modal Attention (Fusion Block)]
+    ATT[Cross-modal Attention: Fusion Block]
     OUT[Simulation State + UX Projection]
 
     Start --> CSV --> TokenCSV --> ATT
@@ -58,6 +59,8 @@ flowchart TD
     Start --> HTML --> TokenHTML --> ATT
     Start --> YAML --> TokenYAML --> ATT
     ATT --> OUT
+
+
 ```
 
 ---
